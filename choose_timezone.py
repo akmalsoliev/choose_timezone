@@ -3,8 +3,8 @@ import pytz
 import random
 
 given_timezones = []
-for names in range(1, 11):
-    given_timezones.append(pytz.all_timezones[random.sample(range(1, len(pytz.all_timezones), len(pytz.all_timezones)))])
+for names in range(0, 10):
+    given_timezones.append(pytz.all_timezones[random.randint(1, len(pytz.all_timezones))])
 
 print('Hello and welcome to this small timezone checker application. Your options are:')
 
