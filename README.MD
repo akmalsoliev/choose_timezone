@@ -22,3 +22,5 @@ This was a simple project that did not take a lot of time.
 
 
 Hope you enjoy it as much as I did! :) 
+
+CO-Author and Supervisor: Kniewasser Günther
