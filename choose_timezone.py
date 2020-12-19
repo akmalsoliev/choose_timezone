@@ -4,7 +4,6 @@ import random
 
 number_of_inputs = 10
 random_number = list(random.sample(range(0, len(pytz.all_timezones)), number_of_inputs))
-print(random_number)
 
 print('Hello and welcome to this small timezone checker application. Your options are:')
 print('''0. Exit''')
@@ -18,9 +17,7 @@ while True:
         user_input=int(user_input)
         if 10 >= user_input >= 1:
             user_input =- 1
-            index = random_number[user_input] #if 1 = 0 
-            print(index)
-            time_zone_name = pytz.all_timezones[index]
+            time_zone_name = pytz.all_timezones[random_number[user_input]]
 
             chosen_timezone = pytz.timezone(time_zone_name)
             wanted_timezone = datetime.datetime.now(tz=chosen_timezone)
